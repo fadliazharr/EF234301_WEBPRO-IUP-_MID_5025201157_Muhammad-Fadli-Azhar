@@ -1,0 +1,141 @@
+:root {
+    --first-color: #A8DF8E;
+    --second-color: #F3FDE8;
+    --third-color: #FFE5E5;
+    --fourth-color: #FFBFBF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first-color {
+    color: var(--first-color);
+}
+
+.second-color {
+    color: var(--second-color);
+}
+
+.third-color {
+    color: var(--third-color);
+}
+/* .navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+} */
+
+/* Navbar */
+.navbar {
+    background-color: #dff6ff;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+/* End of Navbar */
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #dff6ff;
+}
+
+#index .jumbotron {
+    background-color: #dff6ff;
+    background-image: linear-gradient(180deg, #dff6ff 0%, #256d85 100%);
+}
+
+#index .jumbotron h1 {
+    font-size: 5rem;
+}
+
+#index .jumbotron p {
+    font-size: 1.2rem;
+}
+
+#profile .jumbotron {
+    background-color: #dff6ff;
+}
+
+/* End of Jumbotron */
+
+/* Start of Card for Traditional Food */
+.cust-card {
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    background-color: #545454;
+    margin: 20px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    transition: 200ms;
+}
+
+.cust-card:hover {
+    overflow: hidden;
+    width: 16rem;
+    height: 16rem;
+    background-color: #545454;
+    margin: 20px;
+    padding: 0;
+    position: relative;
+    transition: 200ms;
+    box-shadow: 0px 5px 10px;
+}
+
+.cust-card > img {
+    width: 100%;
+    display: block;
+}
+
+.image-overlay {
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.image-overlay:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 50%);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 200ms;
+}
+/* End of Card for Traditional Food */
+
+.scroll {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.btn-rounded {
+    position: relative;
+    padding: 0.9375rem 1.2rem;
+    font-weight: 500;
+    border: 0;
+    background-color: var(--first-color);
+}
